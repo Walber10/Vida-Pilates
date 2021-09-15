@@ -6,7 +6,9 @@
 
 
 section {
-    background-image: url('../../assets/backgroundflat.png');
+    background-image: url('../../../assets/backgroundflat.png');
+
+    
     height: 100vh;
 }
 .text-main {
@@ -30,7 +32,7 @@ section {
 }
 
 .rowbackground {
-    background-image: url('../../assets/background-home.png');
+    background-image: url('../../../assets/background-home.png');
     background-repeat: no-repeat;
 }
 
