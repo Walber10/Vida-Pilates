@@ -1,0 +1,177 @@
+<app-header></app-header>
+
+<section>
+  <article>
+    <div class="container">
+      <div class="row marginHome">
+        <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12 ">
+          <div class="text-main">
+            <h1>Group & Private Classes <br /></h1>
+            <div class="row mobile-version">
+           
+              <div class="col-lg-11 col-sm-12 col-xs-12 col-md-12 main-photo">
+                <img
+                  src="../../../assets/woman-with-pilates-trainer-practising-pilates.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p>
+              The benefitss of pilates are revealed more quickly when performed
+              consistently. Acquire long, lean musculature, core strength and
+              improved posture – get started now and start feeling better.
+            </p>
+          </div>
+       
+          <div class="row buttons desktop-version">
+            <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+              <button class="black" [routerLink]="['/more']">MORE</button>
+              
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+              <button class="oragen" [routerLink]="['/book']">BOOK A CLASS</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mobile-version  buttonsMobile ">
+          <div class="col-12 buttons ">
+            <button class="black">MORE</button>
+            <button class="oragen">BOOK A CLASS</button>
+
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 col-xs-12 col-md-12 background-image">
+          <div class="row desktop-version">
+           
+            <div class="col-lg-11 col-sm-12 col-xs-12 col-md-12 main-photo">
+              <img
+                src="../../../assets/woman-with-pilates-trainer-practising-pilates.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="row">
+    
+          <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12 ">
+            <div class="card card2">
+              <div class="row card-text">
+                <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+                  <span>small</span>
+                </div>
+              </div>
+
+              <div class="row subtitle-card">
+                <div class="col-12">
+                  <h1>GROUP CLASSES</h1>
+                </div>
+              </div>
+
+              <div class="row subtitle-span">
+                <div class="col-12">
+                  <h1>using the reformer and chair</h1>
+                  <span> $35</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn" [routerLink]="['/book']">Check it out</a>
+            </div>
+            <!--/card-->
+          </div>
+
+          <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12">
+            <div class="card card1">
+              <div class="row card-text">
+                <div class="col-12">
+                  <span>For all ages</span>
+                </div>
+              </div>
+
+              <div class="row subtitle-card">
+                <div class="col-12">
+                  <h1>PRIVATE SESSIONS</h1>
+                </div>
+              </div>
+
+              <div class="row subtitle-span">
+                <div class="col-12">
+                  <h1>with indivdulizaed program</h1>
+                  <span> $50</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn" [routerLink]="['/book']">Check it out</a>
+            </div>
+            <!--/card-->
+          </div>
+          <div class="col-lg-4 col-sm-12 col-xs-12 col-md-12">
+            <div class="card card3">
+              <div class="row card-text">
+                <div class="col-12">
+                  <span>for a discount</span>
+                </div>
+              </div>
+
+              <div class="row subtitle-card">
+                <div class="col-12">
+                  <h1>PACKAGE</h1>
+                </div>
+              </div>
+
+              <div class="row subtitle-span">
+                <div class="col-12">
+                  <h1>for 10 classes</h1>
+                  <span> $270</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn" [routerLink]="['/book']">Check it out</a>
+            </div>
+            <!--/card-->
+          </div>
+        </div>
+      </div>
+      <div class="container testemonials">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-main text-testemonials">
+                    <h1 >Testimonals</h1>
+                </div>
+               
+            </div>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" *ngIf="carro == 0">
+                    <div class="carousel-caption"  >
+                        <p >I love vida pilates, such a nice envirolment. </p> 
+                        <img src="https://i.imgur.com/lE89Aey.jpg"  >
+                        <div id="image-caption" >Nick Doe</div>
+                    </div>
+                </div>
+                <div class="carousel-item active" *ngIf="carro == 1">
+                    <div class="carousel-caption"  >
+                        <p >Vida pilates is the best in the world .</p>
+                         <img src="https://i.imgur.com/QptVdsp.jpg" class="img-fluid" >
+                        <div id="image-caption" >Cromption Greves</div>
+                    </div>
+                </div>
+                <div class="carousel-item active" *ngIf="carro == 2">
+                    <div class="carousel-caption">
+                        <p>Val is the best teacher in the world</p> <img src="https://i.imgur.com/jQWThIn.jpg" class="img-fluid">
+                        <div id="image-caption">Harry Mon</div>
+                    </div>
+                </div>
+            </div> <a class="carousel-control-prev" data-slide="prev" (click)="onPrevious()" > <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next"  data-slide="next" (click)="onNext()" > <i class='fas fa-arrow-right'></i> </a>
+        </div>
+    </div>
+    </div>
+  </article>
+</section>
+<div class="row">
+ 
+</div>
+<app-footer></app-footer>

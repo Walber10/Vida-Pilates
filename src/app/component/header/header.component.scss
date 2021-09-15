@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+.logo-header{
+    cursor: pointer;
+}
+nav {
+    margin-top: 20px;
+}
+
+.desktop-version {
+  position: fixed;
+  top: 0;
+  width: 100%;
+background-color: #fff;
+z-index: 220 ;
+margin-bottom: 80px;
+}
+
+
+.navbar-blue {
+  a {
+    color: #282828;
+    font-weight: 600;
+    width: auto;
+    display: flex;
+    text-align: center;
+  }
+
+}
+button {
+    width: 168px;
+    height: 41px;
+    border: none;
+    background-color: rgb(225, 118, 96);
+    color: #ffff;
+    font-family: Raleway;
+  font-weight: bold;
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    p {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+  
+
+}
+
+.image-background {
+  background-image: url ('../../../assets/background-home.png');
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: white;
+ 
+  a:hover {
+    text-decoration: 6px solid #e2cca7 underline;
+    text-underline-offset: 2px;
+  }
+
+}
+
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #2b3146;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: auto;
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+
+}
+
+.login:focus, .login:hover {
+  color: black;
+  box-shadow: 0 0 21px rgb(225, 118, 96);  
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.icons {
+
+  i {
+      font-size: 20px;
+     
+      color: #E0745F;;
+  }
+
+}
+
+
+
+.mobile-version {
+ display: none;
+}
+
+@media  (max-width: 900px) {
+  .desktop-version {
+    display: none;
+  }
+  .mobile-version {
+    display: block;
+   }
+button {
+  background-color: transparent!important ;
+}
+
+.mat-button.mat-accent, .mat-icon-button.mat-accent, .mat-stroked-button.mat-accent {
+  color: #E0745F!important;
+  font-size: 40px!important;
+}
+
+::ng-deep.mat-icon {
+  font-size: 40px!important;
+}
+
+.logo-header {
+  img {
+    width: 200px;
+  }
+}
+.margin-mobile {
+  margin-top: 20px;
+}
+
+.togleNav {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+  align-items: center;
+  margin-bottom: 0;
+  list-style: none;
+  height: 40vh;
+  margin-top: 40px;
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+   
+  a {
+    color: #ffff;
+    font-family: Raleway;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #f5f8fb;
+  }
+}
+
+.responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #E0745F;
+  height: 70vh;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  .times {
+    font-size: 40px;
+  }
+}
+}
+
+.navbar {
+  background:transparent;
+
+}
+.navbar-brand{
+color:white;
+}
+.navbar ul.navbar-nav a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #f5f8fb;
+}
+
+.navbar ul.navbar-nav a:hover {
+  background: transparent;
+}
+
+.navbar button.navbar-toggle {
+  background: #ff854f;
+  border-radius: 3px;
+}
+
+.navbar button.navbar-toggle:hover {
+  background: #ff854f;
+}
+
+.navbar button.navbar-toggle > span.icon-bar {
+  background: white;
+}
+
+.navbar {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+  background: black;
+  opacity: 0.9;
+  
+}
+
+.navbar.scrolled #signIn {
+  background-color: #ff854f;
+  border: none;
+
+  
+}
+
+#signIn {
+  height: 40px;
+  width: 85px;
+  background: transparent;
+  border-radius: 2px;
+  border: solid 1px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 10px;
+  font-family: 'Raleway', sans-serif;
+  color: #f5f8fb;
+  z-index: 1;
+}
+
+#signIn:hover {
+  background-color: #ff854f;
+  border-color: #ff854f;
+  color: white;
+}
+#banner{
+background-color:#ff854f;
+background-size:contain;
+opacity:0.5;
+background-repeat:no-repeat;
+height:900px;width:100%;
+}
+h1{
+text-align:center;
+margin-top:15%;
+color:white;
+font-family:'Raleway',sans-serif;
+}
+

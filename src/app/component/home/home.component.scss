@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+
+section {
+    .text-main {
+        margin-top: 140px;
+        h1 {
+            font-family: Playfair Display   ;
+            font-size: 59px;
+            line-height: 55px;
+
+        }
+        p {
+            font-family: Raleway;
+            font-size: 19px;
+            color: #6B6B6B;
+        }
+    }
+
+  .marginHome {
+    margin-top: 80px;
+  }
+
+    .background-image {
+        background-image: url("../../../assets/background-home.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -200px;
+    }
+    
+    .main-photo{
+        height: 100vh;
+        margin-top: 300px;
+    }
+    
+.buttons {
+
+
+    button {
+        height: 60px;
+        font-family: Raleway;
+        font-size: 21px;
+        font-weight: 900;  
+        width: 100%;   
+        margin-right: 5px;
+}
+button:hover {
+  box-shadow: 0px 0px 10px #E0745F;;
+}
+
+.black:hover {
+  box-shadow: 0px 0px 10px #2B3146!important;
+}
+
+.black {
+    border: none;
+    background-color: #2B3146;
+    color: white;
+}
+
+
+.oragen {
+    border: 4px solid #E0745F;
+    color: #E0745F;    ;
+    background-color: white;
+  
+}
+}
+
+.main-photo {
+  img {
+    border: 2px solid ;
+  }  
+}
+
+}
+
+
+
+// Colors
+$color-one: #2B3146;
+$color-two: #383A3F;
+$color-three: #F68657;
+$color-four: #E0745F;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-two;
+  font-family: "Varela Round", sans-serif;
+}
+
+.prices {
+    margin-top: 80px;
+}
+
+.cards {
+    margin-top: 100px;
+
+}
+
+.card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../../assets/woman-doing-pilates-with-ball.jpg');
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  //width: calc(33.3333% - 40px); /* 1/3 minus the margins (20+20) */
+  padding: 20px;
+  text-align: center;
+  color: white;
+ //float: left;
+  @media (max-width: 768px) {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+  &:nth-child(2) {
+    margin: 20px 0px;
+    width: 33.3333%;
+    padding: 50px 20px;
+    @media (max-width: 768px) {
+      margin: 10px 20px;
+      width: calc(100% - 40px);
+    }
+  }
+  .title {
+    font-size: 25px;
+  }
+  .icon {
+    margin: 50px 0;
+    svg {
+      width: 100px;
+      height: 100px;
+      path {
+        fill: $color-four;
+      }
+    }
+  }
+  .features {
+    ul {
+      padding: 0;
+      margin: 20px 0 50px 0;
+      list-style-type: none;
+      li {
+        margin: 10px 0;
+        font-size: 14px;
+        span {
+          border-bottom: 2px dotted $color-four;
+        }
+      }
+    }
+  }
+  .btn {
+    display: block;
+    background: $color-four;
+    color: white;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.9);
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    &:hover {
+      background: $color-three;
+    }
+  }
+}
+
+.card:hover {
+  transform: translate(0, -5px);
+}
+
+.card-text {
+  margin-top: 40%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.subtitle-card {
+  text-align: left;
+  h1 {
+    margin-bottom: 0px;
+    font-weight: 900px ;
+    font-family: Playfair Display   ;
+    font-size: 39px;
+    line-height: 40px;
+  }
+}
+
+.subtitle-span {
+  text-align: left;
+  span {
+    font-size: 50px;
+    font-family: Raleway;
+  }
+}
+
+.card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url('../../../assets/woman-with-pilates-trainer-practising-pilates.jpg')!important;
+  
+}
+
+.card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url('../../../assets/Studio+Pilates+Richmond.png')!important;
+}
+
+#demo {
+  background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%);
+  max-width: 900px;
+  margin: auto;
+
+}
+
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 5rem 8rem;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem
+}
+
+@media(max-width:767px) {
+  .carousel-caption {
+      position: initial;
+      z-index: 10;
+      padding: 3rem 2rem;
+      color: rgba(78, 77, 77, 0.856);
+      text-align: center;
+      font-size: 0.7rem;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 1.5rem
+  }
+}
+
+.carousel-caption img {
+  width: 6rem;
+  border-radius: 5rem;
+  margin-top: 2rem
+}
+
+@media(max-width:767px) {
+  .carousel-caption img {
+      width: 4rem;
+      border-radius: 4rem;
+      margin-top: 1rem
+  }
+}
+
+#image-caption {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+  #image-caption {
+      font-style: normal;
+      font-size: 0.6rem;
+      margin-top: 0.5rem
+  }
+}
+
+i {
+  background-color: #E0745F;
+  padding: 1.4rem
+}
+
+@media(max-width:767px) {
+  i {
+      padding: 0.8rem
+  }
+}
+
+.carousel-control-prev {
+  justify-content: flex-start
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  opacity: unset;
+  cursor: pointer;
+
+}
+
+.mobile-version {
+  display: none;
+}
+
+
+@media  (max-width: 900px) {
+  .desktop-version {
+    display: none;
+  }
+
+  .mobile-version {
+    display: block;
+  }
+
+  .buttonsMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .text-testemonials {
+    text-align: center!important;
+  }
+
+  .text-main {
+    margin-top: 80px!important;
+    h1 {
+      font-size: 35px!important;
+      font-family: 
+      Playfair Display;
+      font-weight: 900;
+    }
+    p {
+      margin-top: 30px;
+      z-index: 1;
+
+      font-family: Raleway;
+      font-weight: 500;
+      font: size 14px!important; 
+      color: #000000!important
+      ;
+    }
+}
+.main-photo {
+  margin-top: 0px!important;
+  height:auto!important;
+
+img {
+  width: 350px;
+}
+}
+.photo-main {
+  img {
+    border: 2px solid ;
+  }  
+}
+
+.background-image {
+  background-image: url("../../../assets/background-home-mobile.png")!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+   height: 50vh!important;
+  margin-top: -200px;
+  z-index: -1;
+}
+
+}

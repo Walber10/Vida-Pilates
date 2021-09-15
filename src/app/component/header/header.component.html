@@ -1,0 +1,81 @@
+<section id="navbar" class="desktop-version">
+    <article>
+    <div class="container">
+       <div class="row rownav">
+           <div class="col-5 d-flex align-items-center">
+            <div class="logo-header">
+                <img src="../../../assets/logo.png" alt="" [routerLink]="['']">
+            </div>
+           </div>
+           <div class="col-7 d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-blue ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse responsive" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link " routerLink="" [routerLink]="['/about']">ABOUT US </a>
+                    <a class="nav-item nav-link"[routerLink]="['/book']">BOOK A CLASS</a>
+                    <a class="nav-item nav-link" [routerLink]="['/studios']">OUR STUDIOS</a>
+                    <a class="nav-item nav-link " [routerLink]="['/contact']">CONTACT US </a>
+                    <button class="nav-item nav-link login " [routerLink]="['/login']"> <p>BOOK NOW</p> </button>
+          
+
+                  </div>
+                </div>
+              </nav>
+           </div>
+       </div>
+    </div>
+</article>
+</section>
+
+<div class="collapse navbar-collapse " id="navbarNavAltMarkup" [ngClass]="responsive">
+  <div class="row margin-mobile">
+    <div class="col-12 d-flex justify-content-center align-content-center ">
+     <div class="logo-header">
+         <img src="../../../assets/logo-white2.png" alt="" [routerLink]="['']">
+     </div>
+   
+
+     <div class="menu-hamburguer">
+       <button class="times" (click)=addMobile()>
+        <i class="fas fa-times"></i>
+       </button>
+     </div>
+   </div>
+</div>
+  <div class="navbar-nav">
+    <a class="nav-item nav-link " routerLink="" [routerLink]="['/about']">ABOUT US </a>
+    <a class="nav-item nav-link"[routerLink]="['/book']">BOOK A CLASS</a>
+    <a class="nav-item nav-link" [routerLink]="['/studios']">OUR STUDIOS</a>
+    <a class="nav-item nav-link " [routerLink]="['/contact']">CONTACT US </a>
+    <button class="nav-item nav-link login " [routerLink]="['/login']"> <p>LOGIN IN</p> </button>
+
+
+  </div>
+</div>
+
+<section id="navbar" class="mobile-version" [ngClass]="toggles">
+  <article>
+    <div class="container">
+       <div class="row margin-mobile">
+           <div class="col-12 d-flex justify-content-center align-content-center ">
+            <div class="logo-header">
+                <img src="../../../assets/logo.png" alt="" [routerLink]="['']" >
+
+            </div>
+          
+      
+            <div class="menu-hamburguer" >
+              <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon" (click)=addMobile()>
+                <mat-icon>menu</mat-icon>
+              </button>
+            </div>
+          </div>
+       </div>
+    </div>
+</article>
+
+</section>
+

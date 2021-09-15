@@ -1,0 +1,27 @@
+@import "../../../../../contact-form-05/css/animate.css";
+@import "../../../../../contact-form-05/css/style.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+
+.info-wrap {
+    background-image: url('../../../assets/woman-with-pilates-trainer-practising-pilates.jpg');
+}
+
+.contact-wrap {
+    h3 {
+        font-family: Raleway;
+    }
+}
+
+.button-contact {
+    background-color: #E0745F!important;
+    border: none;
+    color: #fff;
+    width: 200px;
+    height: 65px;
+    font-family: Raleway;
+}
+
+.button-contact:focus, .button-contact:hover {
+    color: black;
+    box-shadow: 0 0 21px rgb(225, 118, 96);  
+  }

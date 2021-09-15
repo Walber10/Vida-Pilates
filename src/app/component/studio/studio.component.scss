@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import "../home/home.component.scss";
+
+
+
+
+section {
+   
+    .photo-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        img {
+            position: relative;
+        }
+        h1 {
+            font-family:Playfair Display ;
+            font-size: 40px;
+            font-weight: 900;
+            color: #FFFFFF;
+            position: absolute;
+            top: 50%;
+
+        }
+    }
+
+    .text-main {
+        margin-top: 50px;
+
+        span {
+            font-family:Playfair Display ;
+            font-size: 40px;
+            font-weight: 500;
+            color: #6B6B6B;
+            line-height: normal;
+           
+        }
+        p {
+            max-width:550px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .photo-map {
+        margin-top: 50px;
+    }
+   .carousel {
+       margin-top: 30px;
+   }
+
+   .mapa {
+       margin-top: 80px;
+   }
+
+   ::ng-deep {
+
+    a {
+        color: #E0745F!important;
+        text-decoration: none;
+     }
+       a:hover {
+       color: #E0745F!important;
+       text-decoration: none;
+
+    }
+   }
+
+}
+
+@media (max-width: 900px) {
+    .text-main {
+        margin-top: 50px!important;
+        line-height: normal!important;
+}
+}
