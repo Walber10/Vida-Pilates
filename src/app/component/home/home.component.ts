@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     // this.myFunction()
     this.carro
+
+    this.onNext();//Initialisation
+    setInterval(() => this.onNext(), 3000);
+
   }
 
 

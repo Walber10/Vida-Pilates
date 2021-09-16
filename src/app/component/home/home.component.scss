@@ -282,7 +282,24 @@ i {
   i {
       padding: 0.8rem
   }
+  section {
+    padding: 0px 20px 0px 20px!important;
+  }
+  
+  .mobileHome {
+    margin-top: 0px!important;
+  }
+
+  .card-text {
+    margin-top: 0px!important;
+  }
+
+  .cards {
+    margin-top: 0px!important;
+  }
 }
+
+
 
 .carousel-control-prev {
   justify-content: flex-start

@@ -8,6 +8,7 @@
 
 section {
    
+
     .photo-center {
         display: flex;
         justify-content: center;
@@ -27,6 +28,7 @@ section {
     }
 
     .text-main {
+        
         margin-top: 50px;
 
         span {
@@ -70,8 +72,19 @@ section {
 }
 
 @media (max-width: 900px) {
+    section {
+        background-image: url("../../../assets/AboutPage_Banner_3024x.jpg");
+    }
     .text-main {
         margin-top: 50px!important;
         line-height: normal!important;
+        h1 {
+            color: #FFFFFF;
+        }
+
+        p {
+            color: #FFFFFF;
+
+        }
 }
 }
