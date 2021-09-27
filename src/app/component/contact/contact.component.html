@@ -56,10 +56,10 @@
                           </div>
                         </div>
                         <form
+                          action="https://formspree.io/f/xdoybqrn"
                           method="POST"
-                          id="contactForm"
-                          name="contactForm"
-                          class="contactForm"
+                          [formGroup]="contactForm"
+                          (ngSubmit)="onSubmit()"
                         >
                           <div class="row">
                             <div class="col-md-12">
@@ -68,7 +68,7 @@
                                   type="text"
                                   class="form-control"
                                   name="name"
-                                  #name
+                                  formControlName="name"
                                   id="name"
                                   placeholder="Name"
                                 />
@@ -80,7 +80,7 @@
                                   type="email"
                                   class="form-control"
                                   name="email"
-                                  #email
+                                  formControlName="email"
                                   id="email"
                                   placeholder="Email"
                                 />
@@ -92,7 +92,7 @@
                                   type="text"
                                   class="form-control"
                                   name="subject"
-                                  id="subject"
+                                  formControlName="subject"
                                   placeholder="Subject"
                                 />
                               </div>
@@ -101,7 +101,7 @@
                               <div class="form-group">
                                 <textarea
                                   name="message"
-                                  #comment
+                                  formControlName="Comment"
                                   class="form-control"
                                   id="message"
                                   cols="30"
@@ -121,6 +121,7 @@
                               </div>
                             </div>
                           </div>
+                     
                         </form>
                         <div class="w-100 social-media mt-5">
                           <h3>Follow us here</h3>

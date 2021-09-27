@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,21 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contactForm: FormGroup
 
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder, private http: HttpClient) { 
+
+  }
+
+  ngOnInit() {
+this._initForm()
     
   }
 
-// onSubmit(name: any, email: any, comment: any) {
-//   this.emailService.sendEmail({
-//     from: 'Mailgun Sandbox <info@vidapilates.com.au>',
-//     to: email,
-//     name: name,
-//     text: comment,
-//   })
-// }
+  _initForm(){
+    this.contactForm = this.fb.group({
+      name: [""],
+      email: [""],
+      subject: [""],
+      Comment: [""]
+    })
+  }
+
+  onSubmit(){
+    const email = 'https://formspree.io/f/xdoybqrn'
+    this.contactForm.value
+    this.http.post(email, this.contactForm.value ).subscribe((resp)=>{
+      console.log(resp)
+    })
+  }
+
+
   
-
-
 }

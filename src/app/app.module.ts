@@ -10,7 +10,7 @@ import { BookingComponent } from './component/booking/booking.component';
 import { StudioComponent } from './component/studio/studio.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { LoginComponent } from './component/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { MoreComponent } from './component/more/more.component';
@@ -19,6 +19,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatDividerModule,
     MatSidenavModule,
-    
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
 
