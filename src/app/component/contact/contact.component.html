@@ -1,8 +1,8 @@
 <app-header></app-header>
 
-<section>
+<section [ngSwitch]="contactPage">
   <article>
-    <div class="container">
+    <div class="container" *ngSwitchCase="'sendEmail'">
       <body>
         <section class="ftco-section">
           <div class="container">
@@ -144,6 +144,17 @@
           </div>
         </section>
       </body>
+    </div>
+    <div class="container thanks" *ngSwitchCase="'thanksForEmail'">
+      <div class="jumbotron text-center">
+        <h1 class="display-3">Thank You!</h1>
+        <p class="lead"><strong>Thanks for choice Vida Pilates</strong> We will contact you soon.</p>
+        <hr>
+        
+        <p class="lead">
+          <a class="btn btn-primary btn-sm" [routerLink]="''" role="button">Continue to homepage</a>
+        </p>
+      </div>
     </div>
   </article>
 </section>

@@ -10,6 +10,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup
+  contactPage: string = 'sendEmail'
+  thanksForEmail = false
 
   constructor(private fb: FormBuilder, private http: HttpClient) { 
 
@@ -17,7 +19,6 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
 this._initForm()
-    
   }
 
   _initForm(){
@@ -35,8 +36,9 @@ this._initForm()
     this.http.post(email, this.contactForm.value ).subscribe((resp)=>{
       console.log(resp)
     })
-  }
+    this.contactPage = 'thanksForEmail'
 
+  }
 
   
 }
