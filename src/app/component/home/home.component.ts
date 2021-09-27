@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   carro: number = 0
+  url: string = ''
 
   constructor() { }
 
@@ -20,6 +21,11 @@ export class HomeComponent implements OnInit {
 
   }
 
+  goToUrl() {
+    this.url = `https://www.mindbodyonline.com/explore/locations/vida-pilates`
+      
+    return window.location.href = this.url 
+}
 
   onPrevious() {
     let reset: number = 2

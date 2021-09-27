@@ -7,15 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  responsive = ''
-  toggles = ''
-  togleNav: boolean = true
+  responsive = '' ;
+  toggles = '' ;
+  togleNav: boolean = true; ;
+  url: string = '' ;
 
   constructor() { }
 
   ngOnInit(): void {
     console.log(this.togleNav)
   }
+
+  goToUrl() {
+    this.url = `https://www.mindbodyonline.com/explore/locations/vida-pilates`
+      
+    return window.location.href = this.url 
+}
+
 
   addMobile() {
     this.togleNav = !this.togleNav

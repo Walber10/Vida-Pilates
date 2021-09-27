@@ -5,6 +5,8 @@
 
 
 section {
+  background-image: url('../../../assets/backgroundflat.png');
+
     .text-main {
         margin-top: 140px;
         h1 {
@@ -71,11 +73,7 @@ button:hover {
 }
 }
 
-.main-photo {
-  img {
-    border: 2px solid ;
-  }  
-}
+
 
 }
 
@@ -101,7 +99,7 @@ body {
 }
 
 .cards {
-    margin-top: 100px;
+    margin-top: 80px;
 
 }
 
@@ -179,7 +177,7 @@ body {
 }
 
 .card-text {
-  margin-top: 40%;
+  margin-top: 20%;
   text-align: left;
   font-size: 20px;
 }

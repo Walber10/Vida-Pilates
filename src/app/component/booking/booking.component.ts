@@ -10,10 +10,11 @@ export class BookingComponent implements OnInit {
   message: string = ''
   url: string = ''
 
-  constructor() { }
+  constructor(  ) { }
 
   ngOnInit(): void {
   }
+
 
   sendWhatsapp() {
     let messages = this.message
