@@ -99,7 +99,7 @@ body {
 }
 
 .cards {
-    margin-top: 80px;
+    margin-top: 30px;
 
 }
 
@@ -293,7 +293,30 @@ i {
   }
 
   .cards {
-    margin-top: 0px!important;
+    margin-top: -100px!important;
+  }
+  .card-text {
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .subtitle-card {
+    text-align: left;
+    h1 {
+      margin-bottom: 0px;
+      font-weight: 900px ;
+      font-family: Playfair Display   ;
+      font-size: 25px;
+      line-height: 40px;
+    }
+  }
+  
+  .subtitle-span {
+    text-align: left;
+    span {
+      font-size: 30px;
+      font-family: Raleway;
+    }
   }
 }
 
@@ -342,6 +365,7 @@ i {
 
   .text-testemonials {
     text-align: center!important;
+    color: white;
   }
 
   .text-main {
@@ -368,7 +392,7 @@ i {
   height:auto!important;
 
 img {
-  width: 350px;
+  width: 300px;
 }
 }
 .photo-main {
