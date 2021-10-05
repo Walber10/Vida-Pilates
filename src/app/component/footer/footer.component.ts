@@ -17,8 +17,9 @@ export class FooterComponent implements OnInit {
 
   goToUrl() {
     this.url = `https://www.mindbodyonline.com/explore/locations/vida-pilates`
-      
     return window.location.href = this.url 
+    window.scroll(0,0);
+
 }
 
 }
