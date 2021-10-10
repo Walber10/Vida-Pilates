@@ -20,6 +20,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { PricesComponent } from './component/prices/prices.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     LoginComponent,
     MoreComponent,
+    PricesComponent,
   ],
   imports: [
     AppRoutingModule,
