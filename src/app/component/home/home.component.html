@@ -34,9 +34,9 @@
         </div>
         <div class="row mobile-version  buttonsMobile ">
           <div class="col-12 buttons ">
-            <button class="oragen">BOOK A CLASS</button>
+            <button class="oragen" (click)="goToUrl()">BOOK A CLASS</button>
 
-            <button class="black">PRICES</button>
+            <button class="black" [routerLink]="['/prices']">PRICES</button>
 
           </div>
         </div>
