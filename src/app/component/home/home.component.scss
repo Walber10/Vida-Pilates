@@ -104,6 +104,7 @@ body {
 }
 
 .card {
+  cursor: pointer;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../../../assets/woman-doing-pilates-with-ball.jpg');
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   border-radius: 5px;
@@ -155,6 +156,7 @@ body {
     }
   }
   .btn {
+    cursor: pointer;
     display: block;
     background: $color-four;
     color: white;
@@ -192,6 +194,11 @@ body {
 }
 
 .subtitle-span {
+  a {
+    cursor: pointer;
+
+  }
+  margin-top: 35px;
   text-align: left;
   span {
     font-size: 30px;
@@ -200,12 +207,19 @@ body {
 }
 
 .card2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url('../../../assets/woman-with-pilates-trainer-practising-pilates.jpg')!important;
-  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url('../../../assets/woman-with-../../../assets/studio/IMG_9172.jpg')!important;
+  background-size: cover;
 }
 
 .card3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url('../../../assets/studio/IMG_9197.jpg');
+  background-size: cover;
+
+}
+
+.card4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url('../../../assets/studio/online.png');
+  background-size:auto;
 }
 
 #demo {
@@ -270,7 +284,7 @@ body {
 }
 
 i {
-  background-color: #E0745F;
+  background-color: rgb(224, 116, 95);
   padding: 1.4rem
 }
 
@@ -361,6 +375,7 @@ i {
   }
 
   .text-testemonials {
+    margin-top: 80px;
     text-align: center!important;
     color: black;
     h1 {
@@ -420,4 +435,128 @@ img {
   z-index: -1;
 }
 
+}
+.container2 {
+  //position: absolute;
+  height: 300px;
+  width: 900px;
+  //top: 60px;
+  //left: calc(50% - 300px);
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  height: 380px;
+  width: 280px;
+ // background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  font-family: 
+  Playfair Display;
+  font-size: 16px;
+  //position: absolute;
+  //left: 20px;
+ // top: 15px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.bar2 {
+  top: 120px;
+
+}
+
+.bar3 {
+  top: 70px!important;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(224, 116, 95);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgb(224, 116, 95) 65%, rgb(224, 116, 95) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+.newCards {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.rowCards {
+  margin-bottom: 80px;
 }
