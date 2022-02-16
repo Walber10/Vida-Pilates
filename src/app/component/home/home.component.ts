@@ -10,10 +10,10 @@ export class HomeComponent implements OnInit {
   carro: number = 0
   url: string = ''
 
-  constructor() { };
+  constructor() { }
 
   ngOnInit(): void {
-    // this.myFunction()
+    // this.myFunction ewrara()
     this.carro
 
     this.onNext();//Initialisation
