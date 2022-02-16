@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   carro: number = 0
   url: string = ''
 
-  constructor() { }
+  constructor() { };
 
   ngOnInit(): void {
     // this.myFunction()
@@ -19,13 +19,13 @@ export class HomeComponent implements OnInit {
     this.onNext();//Initialisation
     setInterval(() => this.onNext(), 3000);
 
-  }
+  };
 
   goToUrl() {
     this.url = `https://www.mindbodyonline.com/explore/locations/vida-pilates`
       
     return window.location.href = this.url 
-}
+};
 
   onPrevious() {
     let reset: number = 2
@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
       this.carro --
     }
     console.log(this.carro)
-  }
+  };
 
   onNext() {
     let reset: number = 0
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
       this.carro ++ 
     }
     console.log(this.carro)
-  }
+  };
 
 
 }
